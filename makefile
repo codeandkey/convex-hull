@@ -19,9 +19,9 @@ $(OUTPUT): $(OBJECTS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 cleanbin: clean
-	rm -f $(OUTPUT) > /dev/null
+	rm -f $(OUTPUT)
 
 clean:
-	rm -f $(OBJECTS) > /dev/null
+	rm -f $(OBJECTS)
 
 remake: clean all
